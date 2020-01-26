@@ -1,9 +1,9 @@
     /* Página de inicio*/
     
     body {
-        font-family: 'Lato', sans-serif, Arial;
+        font-family: 'Lato', sans-serif;
         width: 100%;
-        background-image: url("../img/bg-0.jpg");
+        background-image: url("../img/bg-5.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -11,42 +11,29 @@
         background-attachment: fixed;
     }
     
-    body:before {
-        content: "";
-        width: 100%;
-        height: 431vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(116, 9, 121, 0.7206232834930848) 59%, rgba(0, 212, 255, 1) 100%); */
-        opacity: 0.5;
-    }
-    
-    body:root {
-        --aqua: #018F98;
-        --navy: #0F1628;
-        --purple: #4A2748;
-        --dark: #373A3C;
-        --grey: #777777;
-        --light: #dddddd;
-        --white: #fff;
-        --danger: #dc3545;
-    }
+
     /* navBar */
-    
-    .navbar-brand {
-        font-size: 30px;
-        font-family: 'Dancing Script', cursive;
-    }
-    
+
     nav {
-        background-color: var(--navy);
+        background: rgb(15, 22, 40);
     }
     
-    .nav-link,
-    .navbar-brand {
-        color: var(--white);
+    .nav-link{
+        color: rgb(248, 229, 229)!important;
+        border-right: 1px solid rgb(248, 229, 229);
+        text-decoration: none;
+        padding: 0 20px!important;
+    } 
+
+    #lastLink {
+        border-right: 0;
     }
+
+
+    .fa-bars {
+        border-color: var(--white);
+    }
+
     
     .row {
         text-align: justify;
@@ -58,43 +45,67 @@
         text-shadow: 2px 2px 2px var(--dark);
         color: var(--white);
         font-size: 40px;
-        padding: 150px 40px 125px 40px
+        padding: 150px 40px 220px 40px;
     }
     
-    .btn-outline {
-        border: 2px solid aqua !important;
-    }
-    
-    .modalBackground {
+    .btn-info {
         width: 100%;
-        background-image: url("../img/bg-0.jpg");
+    }
+    
+    
+
+    .modal-content {
+              /* propiedad para efecto parallax */
+        background-color: rgb(11, 36, 48);
+        color: var(--white);
+    }
+
+    /* section 1 */
+    
+     .imgPerfil {
+        width: 18em;
+        height: 18em;
+    }  
+
+    .section1 {
+        width: 80vw;
+        height: 50vh;
+        padding: 25px 0;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    /* section 2 */
+    .section2 {
+        width: 100%;
+        background-image: url("../img/bg-9.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        /* propiedad para efecto parallax */
-        background-attachment: fixed;
-        background: rgb(255, 255, 255, .7);
     }
-    /* section 1 */
-    
-    .imgPerfil {
-        width: 55%;
-    }
-    
-    .section1 {
-        width: 80vw;
-        padding: 25px 0;
-        margin: 20px auto;
-        background: rgb(255, 255, 255, .7);
-    }
-    /* section 2 */
     
     .imgLab,
     .imgDesafio {
-        width: 40%;
+        width: 6em;
     }
+
+
+
     /*Formulario*/
-    
-    .form-footer {
-        display: none!important;
+   
+    /* footer */
+    footer {
+        background-color: rgb(11, 36, 48);
     }
+
+    .fab{
+        font-size: 40px;
+        color: #ffffff;
+        height: 100px;
+    }
+
+    /*Media queries*/
+
+        /* .section2 {
+        margin: 0 7.18em;
+        background-color:  rgba(31, 129, 129, 0.5);
+    } */
