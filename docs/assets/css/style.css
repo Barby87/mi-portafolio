@@ -3,12 +3,14 @@
     body {
         font-family: 'Lato', sans-serif;
         width: 100%;
-        background-image: url("../img/bg-13.jfif");
+        background-image: url("../img/bg-18.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         /* propiedad para efecto parallax */
         background-attachment: fixed;
+        color: rgb(248, 229, 229);
+
     }
     
 
@@ -20,7 +22,6 @@
     
     .nav-link{
         color: rgb(248, 229, 229)!important;
-        border-right: 1px solid rgb(248, 229, 229);
         text-decoration: none;
         padding: 0 20px!important;
     } 
@@ -31,7 +32,7 @@
 
     /*Ícono hamburguesa*/
     .fa-bars {
-        border-color: #ffffff;
+        border-color:rgb(248, 229, 229);
     }
     
     .row {
@@ -41,22 +42,25 @@
     
     .welcomeText {
         font-family: 'Dancing Script', cursive;
-        text-shadow: 2px 2px 2px var(--dark);
-        color: var(--white);
+        text-shadow: 2px 2px 2px var(--dark); 
+        color: #ffffff;
         font-size: 40px;
         padding: 150px 40px 220px 40px;
     }
     
     .btnInfo, .btnModal {
-        width: 100%;
-        background-color: rgb(25, 161, 150);
-        color: #ffffff;
+        border-radius: 40px!important;
+        /* background-color: #fff; */
+        /* font-weight: 700; */
     }
     
     .modal-content {
               /* propiedad para efecto parallax */
         background-color: rgb(11, 36, 48);
-        color: var(--white);
+    }
+
+    .closeSpan {
+        color:  rgb(248, 229, 229);
     }
 
     /*Estilo secciones en general*/
@@ -76,57 +80,122 @@
         width: 80vw;
         /* height: 50vh; */
         /* padding: 25px 25px; */
-        margin: 50px auto;
         background: rgba(255, 255, 255, 0.6);
+        margin: 50px auto;
+        color: #000000;
     }
     /* section 2 (Mis estudios) */
     .section2 {
         width: 100%;
         height: 100vh;
-        background-image: url("../img/bg-9.jpg");
+        background-image: url("../img/bg-10.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         padding: 40px 20px;
     }
     
-    .section2 h2 {
+    /* .section2 h2 {
         margin: 20px;
     }
 
     .section2 p {
         margin-bottom: 70px;
+    } */
+
+    .imgLab{
+        width: 9.5em;
     }
 
-    .imgLab,
     .imgDesafio {
-        width: 6em;
+        width: 8em;
     }
 
     /* seccion 3 (Proyectos) */
+
+    .section3 {
+        background: rgba(0, 0, 0, 0.6)
+    } 
+
     .card{
-        margin: 30px auto;
+        margin: 40px auto;
     }
 
     .card-title {
         font-weight:700;
+        color: black!important;
+    }
+
+    .list-group-item, .card-text {
+        color: #000000;
     }
 
     /*Formulario*/
    
     /* footer */
+
     footer {
-        background-color: rgb(11, 36, 48);
+        background-color: rgb(15, 22, 40);
+        margin-top: 100px;
     }
 
-    .fab{
-        font-size: 40px;
-        color: #ffffff;
+    footer a {
+        width: 100vW;
+        margin-left: 15px;
+        font-size: 25px;
+        color: rgb(248, 229, 229);
     }
+
+
+    /*Animación*/
+    .swirl-in-fwd {
+        -webkit-animation: swirl-in-fwd 0.6s ease-out both;
+                animation: swirl-in-fwd 0.6s ease-out both;
+    }
+
+    @-webkit-keyframes swirl-in-fwd {
+        0% {
+          -webkit-transform: rotate(-540deg) scale(0);
+                  transform: rotate(-540deg) scale(0);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotate(0) scale(1);
+                  transform: rotate(0) scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes swirl-in-fwd {
+        0% {
+          -webkit-transform: rotate(-540deg) scale(0);
+                  transform: rotate(-540deg) scale(0);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotate(0) scale(1);
+                  transform: rotate(0) scale(1);
+          opacity: 1;
+        }
+      }
 
     /*Media queries*/
 
-        /* .section2 {
-        margin: 0 7.18em;
-        background-color:  rgba(31, 129, 129, 0.5);
-    } */
+    @media screen and (min-width: 576px) {
+        section {
+            border-radius: 4px;
+        }
+        
+        .section2 {
+            width: 80vw;
+            margin: auto;
+        } 
+        
+        footer a{
+
+            margin-left: 25px;
+        }
+        
+        .nav-link {
+            border-right: 1px solid rgb(248, 229, 229);
+        }
+    }

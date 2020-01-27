@@ -1,6 +1,6 @@
 // Writing effect
 let i = 0;
-let text = "Hola, mi nombre es Bárbara.";
+let text = "Hola, mi nombre es Bárbara...";
 
 function typing() {
     if (i < text.length) {
@@ -22,11 +22,11 @@ $(function () {
 
         $('html, body').animate({
             scrollTop: $(gato).offset().top
-        }, 800, function() {
+        }, 1000, function() {
             window.location.hash = gato;
         });
     }
   });
 
     $('[data-toggle="tooltip"]').tooltip();
-})
+});
