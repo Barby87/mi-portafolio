@@ -2,7 +2,7 @@
     
     body {
         font-family: 'Lato', sans-serif;
-        width: 100%;
+        width: 100vw;
         background-image: url("../img/bg-18.jpeg");
         background-size: cover;
         background-position: center;
@@ -32,12 +32,13 @@
 
     /*Ícono hamburguesa*/
     .fa-bars {
-        border-color:rgb(248, 229, 229);
+        border-color:rgb(248, 229, 229)!important;
     }
     
     .row {
         text-align: justify;
     }
+
     /* header */
     
     .welcomeText {
@@ -55,7 +56,7 @@
     }
     
     .modal-content {
-              /* propiedad para efecto parallax */
+        /* propiedad para efecto parallax */
         background-color: rgb(11, 36, 48);
     }
 
@@ -66,7 +67,12 @@
     /*Estilo secciones en general*/
 
     section {
-        margin-top: 100px;
+        margin-top: 6.25em;
+    }
+
+    .btnSaberMas {
+        width: 65vw;
+        border-radius: 45px;
     }
 
     /* section 1 (Sobre mi) */
@@ -78,12 +84,12 @@
 
     .section1 {
         width: 80vw;
-        /* height: 50vh; */
-        /* padding: 25px 25px; */
         background: rgba(255, 255, 255, 0.6);
-        margin: 50px auto;
+        margin: auto;
+        margin-bottom: 5em;
         color: #000000;
     }
+
     /* section 2 (Mis estudios) */
     .section2 {
         width: 100%;
@@ -94,14 +100,6 @@
         background-repeat: no-repeat;
         padding: 40px 20px;
     }
-    
-    /* .section2 h2 {
-        margin: 20px;
-    }
-
-    .section2 p {
-        margin-bottom: 70px;
-    } */
 
     .imgLab{
         width: 9.5em;
@@ -124,6 +122,7 @@
     .card-title {
         font-weight:700;
         color: black!important;
+        content: text-center;
     }
 
     .list-group-item, .card-text {
@@ -131,7 +130,11 @@
     }
 
     /*Formulario*/
-   
+   .jfWelcome-button {
+        border-radius: 50px!important;
+        background-color: brown!important;
+   }
+
     /* footer */
 
     footer {
@@ -140,59 +143,45 @@
     }
 
     footer a {
-        width: 100vW;
         margin-left: 15px;
         font-size: 25px;
         color: rgb(248, 229, 229);
     }
 
-
     /*Animación*/
-    .swirl-in-fwd {
-        -webkit-animation: swirl-in-fwd 0.6s ease-out both;
-                animation: swirl-in-fwd 0.6s ease-out both;
-    }
-
-    @-webkit-keyframes swirl-in-fwd {
-        0% {
-          -webkit-transform: rotate(-540deg) scale(0);
-                  transform: rotate(-540deg) scale(0);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: rotate(0) scale(1);
-                  transform: rotate(0) scale(1);
-          opacity: 1;
-        }
-      }
-      @keyframes swirl-in-fwd {
-        0% {
-          -webkit-transform: rotate(-540deg) scale(0);
-                  transform: rotate(-540deg) scale(0);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: rotate(0) scale(1);
-                  transform: rotate(0) scale(1);
-          opacity: 1;
-        }
-      }
+    
 
     /*Media queries*/
 
     @media screen and (min-width: 576px) {
+        .welcomeText {
+            padding: 3.25em 2.5em 1.25em 2.5em;
+        }
+
         section {
-            border-radius: 4px;
+            border-radius: 0.25em;
         }
         
         .section2 {
             width: 80vw;
+            height: 80vh;
             margin: auto;
         } 
-        
-        footer a{
 
+        .btnSaberMas {
+            width: 30vw;
+        }
+        
+        /* .card {
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+            padding: 0;
+        } */
+
+        footer a {
             margin-left: 25px;
+            font-size: 40px;
+            color: rgb(248, 229, 229);
         }
         
         .nav-link {
