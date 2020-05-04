@@ -3,6 +3,7 @@
         margin: 0!important;
 
     }
+
     /* Página de inicio*/
     
     body {
@@ -17,7 +18,6 @@
         color: rgb(248, 229, 229);
     }
     
-
     /* navBar */
 
     nav {
@@ -30,13 +30,10 @@
         padding: 0 20px!important;
     } 
 
-    #lastLink {
-        border-right: 0;
-    }
-
     /*Ícono hamburguesa*/
+
     .fa-bars {
-        color:rgb(248, 229, 229);
+        color:rgb(248, 229, 229)!important;
     }
     
     .row {
@@ -55,17 +52,19 @@
     
     .btnInfo, .btnModal {
         border-radius: 40px!important;
-        /* background-color: #fff; */
-        /* font-weight: 700; */
     }
     
     .modal-content {
-        /* propiedad para efecto parallax */
         background-color: rgb(11, 36, 48);
     }
 
     .closeSpan {
         color:  rgb(248, 229, 229);
+    }
+
+    .start_section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     /*Estilo secciones en general*/
@@ -95,6 +94,7 @@
     }
 
     /* section 2 (Mis estudios) */
+
     .section2 {
         width: 100%;
         background-image: url("../img/bg-10.jpg");
@@ -120,21 +120,32 @@
 
     .card{
         margin: 40px auto;
+        box-sizing: border-box;
     }
 
     .card-title {
         font-weight:700;
         color: black!important;
-        content: text-center;
+        text-align: center;
+    }
+
+    .card-body {
+        text-align: justify;
+    }
+
+    .card-body_buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card-body_btn {
+        border-radius: 0px;
     }
 
     .list-group-item, .card-text {
         color: #000000;
     }
-
-    /* .btn-outline-dark {
-        border-radius: 45px;
-    } */
 
     /* footer */
 
@@ -161,6 +172,11 @@
             padding: 3.25em 2.5em 1.25em 2.5em;
         }
 
+        .start_section {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+
         section {
             border-radius: 0.25em;
         }
@@ -184,6 +200,10 @@
             width: 40%;
         }
 
+        .card-text, .container_badges {
+            padding: 0 1.5em;
+        }
+
         footer a {
             margin-left: 25px;
             font-size: 40px;
@@ -192,6 +212,10 @@
         
         .nav-link {
             border-right: 1px solid rgb(248, 229, 229);
+        }
+
+        .lastLink{
+            border-right: 0;
         }
     }
 

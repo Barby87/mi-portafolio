@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#myProjects">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a id="lastLink" class="nav-link" href="#socialNetworks" tabindex="-1"
+                        <a class="nav-link lastLink" href="#socialNetworks" tabindex="-1"
                             aria-disabled="true">Contacto</a>
                     </li>
                 </ul>
@@ -49,7 +49,7 @@
         </div>
     </nav>
 
-    <header id="startSection" class="py-5 px-2">
+    <header id="startSection" class="start_section px-2">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -74,7 +74,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div class="container text-center">
+                                <div class="container_badges container text-center">
                                     <div class="row">
                                         <div class="col d-flex justify-content-center p-3">
                                             <img class="imgModal img-fluid rounded-circle pb-2"
@@ -171,22 +171,29 @@
 
     <!--Últimos proyectos realizados-->
     <section id="myProjects" class="section3 p-5 mb-5">
-        <h3 class="text-center font-weight-bold">Mis proyectos</h3>
+        <h3 class="text-center font-weight-bold p-4">Mis proyectos</h3>
         <div class="section3_container container d-flex flex-wrap pt-2 pb-3">
-            <div class="card">
+            <div class="card ">
                 <img src="assets/img/gitJobs.png" class="card-img-top" alt="Imagen GitJobs">
                 <div class="card-body">
                     <h5 class="card-title">GitJobs</h5>
-                    <p class="card-text">Sitio web para búsqueda de trabajo.</p>
+                    <p class="card-text">Sitio web para búsqueda de empleos en el área informática.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Javascript Html, CSS3</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/gitJobs/" target="_blank" class="btn btn-outline-dark">Ver
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">Javascript</span>
+                        <span class="badge badge-dark">Promesas</span>
+                        <span class="badge badge-dark">Async/await</span>
+                        <span class="badge badge-dark">Axios</span>
+                        <span class="badge badge-dark">Express</span>
+                        <span class="badge badge-dark">CCS3</span>
+                        <span class="badge badge-dark">HTML5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/gitJobs/" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
                         página</a>
                     <a href="https://github.com/Barby87/gitJobs" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
                 </div>
             </div>
 
@@ -194,16 +201,24 @@
                 <img src="assets/img/pokedex.png" class="card-img-top" alt="Imagen Pokedex">
                 <div class="card-body">
                     <h5 class="card-title">Pokedex</h5>
-                    <p class="card-text">Página de búsqueda de pokemones</p>
+                    <p class="card-text">Página de búsqueda de pokemones y sus características.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Javascript, CSS3, Bootstrap 4, Html5</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/pokedex/" target="_blank" class="btn btn-outline-dark">Ver
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">Javascript</span>
+                        <span class="badge badge-dark">API Fetch</span>
+                        <span class="badge badge-dark">JQuery</span>
+                        <span class="badge badge-dark">CSS3</span>
+                        <span class="badge badge-dark">Sweet ALert</span>
+                        <span class="badge badge-dark">Chart JS</span>
+                        <span class="badge badge-dark">Bootstrap 4</span>
+                        <span class="badge badge-dark">HTML5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/pokedex/" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
                         página</a>
                     <a href="https://github.com/Barby87/pokedex" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
                 </div>
             </div>
 
@@ -214,14 +229,80 @@
                     <h5 class="card-title">Ricomida</h5>
                     <p class="card-text">Sitio de recetas de cocina Ricomida</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html, CSS3, JQuery, Bootstrap 4</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/ricomida/." target="_blank" class="btn btn-outline-dark">Ver
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">JQuery</span>
+                        <span class="badge badge-dark">Bootstrap 4</span>
+                        <span class="badge badge-dark">CSS3</span>
+                        <span class="badge badge-dark">Html5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/ricomida/." target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
                         página</a>
                     <a href="https://github.com/Barby87/ricomida" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/barberShop.png" class="card-img-top" alt="Imagen Barber Shop">
+                <div class="card-body">
+                    <h5 class="card-title">Blog Barbershop</h5>
+                    <p class="card-text">Página estilo blog, orientada a los cuidados del corte de cabello para hombres.
+                    </p>
+                </div>
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">JQuery</span>
+                        <span class="badge badge-dark">Sass</span>
+                        <span class="badge badge-dark">CSS3</span>
+                        <span class="badge badge-dark">Html5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/barberShop/." target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
+                        página</a>
+                    <a href="https://github.com/Barby87/barberShop" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/revistaOnline.png" class="card-img-top" alt="Imagen Revista Online">
+                <div class="card-body">
+                    <h5 class="card-title">Revista Online</h5>
+                    <p class="card-text">Prototipo de revista online.</p>
+                </div>
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">Sass</span>
+                        <span class="badge badge-dark">CSS grid</span>
+                        <span class="badge badge-dark">Html5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/revistaOnline/" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
+                        página</a>
+                    <a href="https://github.com/Barby87/revistaOnline" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/startupTreek.png" class="card-img-top" alt="Imagen Treek-In">
+                <div class="card-body">
+                    <h5 class="card-title">Trekk-In</h5>
+                    <p class="card-text">Sitio web dedicado a personas amantes del trekking.</p>
+                </div>
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">Sass</span>
+                        <span class="badge badge-dark">CSS grid </span>
+                        <span class="badge badge-dark">Flexbox</span>
+                        <span class="badge badge-dark">Animación SVG</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/startupTreek-In/" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver página</a>
+                    <a href="https://github.com/Barby87/startupTreek-In" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
                 </div>
             </div>
 
@@ -231,14 +312,17 @@
                     <h5 class="card-title">Cuppon</h5>
                     <p class="card-text">Página web de descuentos.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html5, CSS3, Bootstrap 4</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/cuppon" target="_blank" class="btn btn-outline-dark">Ver
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">Bootstrap 4</span>
+                        <span class="badge badge-dark"> CSS3</span>
+                        <span class="badge badge-dark">Html5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/cuppon" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
                         página</a>
                     <a href="https://github.com/Barby87/cuppon" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
                 </div>
             </div>
 
@@ -248,83 +332,36 @@
                     <h5 class="card-title">Suricata</h5>
                     <p class="card-text">Sitio de comida estilo delivery.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html5, CSS3, Bootstrap 4</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/suricata" target="_blank" class="btn btn-outline-dark">Ver
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">Bootstrap 4</span>
+                        <span class="badge badge-dark">CSS3</span>
+                        <span class="badge badge-dark">Html5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/suricata" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
                         página</a>
                     <a href="https://github.com/Barby87/suricata" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
                 </div>
             </div>
 
             <div class="card">
                 <img src="assets/img/meetAndCoffee.png" class="card-img-top" alt="Imagen Meet and Coffee">
-                <div class="card-body">
-                    <h5 class="card-title">Meet & Coffee</h5>
+                <div class="card-body px-3">
+                    <h5 class="card-title text-center">Meet & Coffee</h5>
                     <p class="card-text">Página de eventos donde se organizan charlas sobre tecnología.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html5, CSS3</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/meetAndCoffee/" target="_blank" class="btn btn-outline-dark">Ver
+                <div class="container_badges container text-center">
+                        <span class="badge badge-dark">CSS3</span>
+                        <span class="badge badge-dark">Html5</span>
+                </div>
+                <div class="card-body card-body_buttons">
+                    <a href="https://barby87.github.io/meetAndCoffee/" target="_blank"
+                        class="btn btn-outline-dark card-body_btn">Ver
                         página</a>
                     <a href="https://github.com/Barby87/meetAndCoffee" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/barberShop.png" class="card-img-top" alt="Imagen Barber Shop">
-                <div class="card-body">
-                    <h5 class="card-title">Blog Barbershop</h5>
-                    <p class="card-text">Página orientado a los cuidados del corte de cabello para hombres.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html5, CSS3, Sass, Javascript</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/barberShop/." target="_blank" class="btn btn-outline-dark">Ver
-                        página</a>
-                    <a href="https://github.com/Barby87/barberShop" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/revistaOnline.png" class="card-img-top" alt="Imagen Revista Online">
-                <div class="card-body">
-                    <h5 class="card-title">Revista Online</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html5, CSS grid, Sass, Javascript</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/revistaOnline/" target="_blank" class="btn btn-outline-dark">Ver
-                        página</a>
-                    <a href="https://github.com/Barby87/revistaOnline" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/startupTreek.png" class="card-img-top" alt="Imagen Treek-In">
-                <div class="card-body">
-                    <h5 class="card-title">Treek-In</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item font-weight-bold">Html5, CSS grid, flexbox, Animación SVG, Sass,
-                        Javascript</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://barby87.github.io/startupTreek-In/" target="_blank"
-                        class="btn btn-outline-dark">Ver página</a>
-                    <a href="https://github.com/Barby87/startupTreek-In" target="_blank"
-                        class="btn btn-outline-dark">Repositorio</a>
+                        class="btn btn-outline-dark card-body_btn">Repositorio</a>
                 </div>
             </div>
         </div>
